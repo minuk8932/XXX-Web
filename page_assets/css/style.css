@@ -1,19 +1,101 @@
 @charset "utf-8";
-@import url(https://font.googleapis.com/earlyaccess/nanumgothic.css);
+@import url("https://font.googleapis.com/earlyaccess/nanumgothic.css");
 @import url("http://fonts.googleapis.com/earlyaccess/kopubbatang.css");
 @import url("font-awesome.min.css");
 
-::selection {
+/* 선택시 */
+::selection { 
     background: #fff;
     color: #000;
     text-shadow: none;
 }
 
-body{font-family:'Nanum Gothic';} /* 레이아웃 전체 폰트 지정 */
+/* 레이아웃 전체 */
+body { 
+    background-color: #000;
+    font-family:'Nanum Gothic';
+}
 
-a, a:link, a:visited{color:#000;text-decoration:none;} /* 링크 색상을 검은색으로 지정, 밑줄 제거 */
-a:hover, a:active{color:#000;} /* 활성화된 링크 색상을 검은색으로 지정 */
+/* 폰트 설정 */
+.ft1 {
+    font: italic bold 30px/40px serif, sans-serif, monospace;
+    font: color #fff;
+}
+.ft2 {
+    font: 500 20px monospace;
+    font: color #fff;
+}
 
-img{border:0;} /* 이미지의 외곽선 제거 */
+/* 링크 색상을 검은색으로 지정, 밑줄 제거 */
+a, a:link, a:visited{ 
+    color:#fff;text-decoration:none;
+}
 
-input{outline:none;} /* 입력폼의 외곽선 제거 */
+/* 활성화된 링크 색상을 검은색으로 지정 */
+a:hover, a:active{
+    color:#fff;
+} 
+
+/* 이미지 외곽선 제거 */
+img{
+    border:0;
+} 
+
+/* 입력폼의 외곽선 제거 */
+input{
+    outline:none;
+} 
+
+/* Footer */
+
+#footer {
+    position: relative;
+    height: 3em;
+    line-height: 3em;
+    margin: 0;
+    background: #2b2b2b;
+    color: #999;
+    color: rgba(185, 186, 187, 0.5);
+    overflow: hidden;
+}
+
+    #footer a {
+        color: #999;
+        color: rgba(185, 186, 187, 0.5);
+    }
+
+        #footer a:hover {
+            color: #bbb;
+            color: #b9babb;
+        }
+
+    #footer .actions {
+        position: absolute;
+        left: 1em;
+        top: 0.25em;
+        height: 3em;
+        line-height: 3em;
+        margin: 0;
+    }
+
+        #footer .actions li {
+            font-size: 1.25em;
+            margin: 0;
+        }
+
+            #footer .actions li a {
+                padding: 0.5em;
+            }
+
+    #footer .menu {
+        position: absolute;
+        right: 2em;
+        height: 3em;
+        line-height: 3em;
+        margin: 0;
+    }
+
+        #footer .menu li {
+            font-size: 0.9em;
+            color: #F9FFFF;
+        }
