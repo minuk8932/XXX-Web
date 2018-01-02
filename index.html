@@ -7,7 +7,7 @@
         <link rel="SHORTCUT ICON" href="./images/main/XXX_logo.ico" />
 	    <link rel="icon" href="./images/main/XXX_logo.ico" type="image/ico" />
         <link rel="stylesheet" href="./page_assets/css/style.css" />
-        <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="./page_assets/js/main.js"></script>
@@ -23,15 +23,22 @@
             <img src = "./images/main/main_img.jpeg" width = "1200" height = "500" title = "XXX_Main">
         </section>
 
-        <section>
+        <div id="contact-icons">
+            <!-- 하단 링크 설정 -->
+            <ul id="float-icons" class="contact">
+                <span><i class="fa fa-facebook-official" aria-hidden="true"></i><a class = "contactlink" href = "https://ko-kr.facebook.com/people/%EB%94%98%EB%94%98%EC%9D%B4/100004035184267"> Facebook</a></span>
+                <span><i class="fa fa-instagram" aria-hidden="true"></i><a class = "contactlink" href = "#"> Instagram</a></span>
+                <span><i class="fa fa-envelope-o" aria-hidden="true"></i><a class = "contactlink" href = "#"> E-mail</a></span>
+            </ul>
+        </div>
 
-        </section>
-
-        <footer id="footer">
-                <ul class="menu">
+        <footer id="footer">                
+            <nav class="menu">
+                <ul>
                     <li>Copyright&copy; XXX All rights Reserved.</li>
                 </ul>
-        
+            </nav>
         </footer>
+        
     </body>
 </html>

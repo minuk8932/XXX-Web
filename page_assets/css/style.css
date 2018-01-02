@@ -73,7 +73,40 @@ input{
     }
         .main.style1{
             text-align: center;
-            padding: 4em 0 4em 0;
+            padding: 4em 0 3em 0;
+        }
+            .main.style1 h2 {
+                font-size: 4em;
+                line-height: 1em;
+                letter-spacing: -4px;
+            }
+
+/* Contact */
+    #contact-icons{
+        position: relative;
+        height: 3em;
+        line-height: 2em;
+        margin: 0em;
+        background: #000;
+        color: #fff;
+        color: #fff;
+        overflow: hidden;
+    }
+        #contact-icons a{
+            color: #999;
+            color: rgba(185, 186, 187, 0.5); 
+        }
+            #contact-icons a:hover{
+                color: #bbb;
+                color: #b9babb;
+            }
+        #contact-icons .contact{
+            position: absolute;
+            left: 1em;
+            top: 0.25em;
+            height: 3em;
+            line-height: 3em;
+            margin: 0;
         }
 
 /* Footer */
@@ -83,7 +116,7 @@ input{
         line-height: 2em;
         margin: 0;
         background: #2b2b2b;
-        color: #999;
+        color: #000;
         color: rgba(185, 186, 187, 0.5);
         overflow: hidden;
     }
@@ -126,5 +159,5 @@ input{
 
             #footer .menu li {
                 font-size: 0.9em;
-                color: #F9FFFF;
+                color: #999;
             }
