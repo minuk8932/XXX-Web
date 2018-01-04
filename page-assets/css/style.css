@@ -81,13 +81,19 @@ input{
             left:45%;
             box-shadow: 0px 1px 20px #333;
             z-index:100;
-            color: #FFF;
+            color: #999;
             display:none;
         }
-            #popup_layer .popup_list{
+            #popup_layer .popup_list .list_select{
+                color: #999;
                 font-size: 3em;
                 letter-spacing: 2px;
                 line-height: 1.5em;
+            }
+
+            #popup_layer .popup_list a:hover{
+                color: #FFF;
+                color: #FFF;
             }
 
 /* background */
