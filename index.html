@@ -8,9 +8,6 @@
         <link rel="SHORTCUT ICON" href="./images/main/XXX-logo.ico" />
 	    <link rel="icon" href="./images/main/XXX-logo.ico" type="image/ico" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="./page-assets/js/main.js"></script>
     </head>
 
     <!-- body -->
@@ -18,11 +15,22 @@
         <header id = "header">
             <!-- 홈 로고 설정 -->
             <h1 id = "logo"><a href = "index.html" title = "home"> XXX </a></h1>
-            <a href = "https://www.naver.com/" class = "menuLink"><img src = "./images/main/main-menu.png"></a>
+            <a href = "#overlay_t" class = "triggerMenu"><img src = "./images/main/main-menu.png"></a>
         </header>
 
         <div id = "XXX_image" class = "main style1 dark fullscreen">
             <img src = "./images/main/main-img.jpeg" title = "XXX_Main">
+        </div>
+
+        <div id="overlay_t"></div> 
+        <div id="popup_layer">
+            <ul class = "popup_list" type ="none">
+                <li>login</li>
+                <li>shop</li>
+                <li>order list</li>
+                <li>cart</li>
+                <li>favorite</li>
+            </ul>
         </div>
 
         <div id="contact-icons">
@@ -34,7 +42,6 @@
             </ul>
         </div>
 
-
         <!-- footer -->
         <footer id="footer">                
             <nav class="copyright">
@@ -45,6 +52,7 @@
         </footer>
 
         <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     	<script src="./page-assets/js/jquery.poptrox.min.js"></script>
 	    <script src="./page-assets/js/jquery.scrolly.min.js"></script>
     	<script src="./page-assets/js/jquery.scrollex.min.js"></script>
