@@ -83,6 +83,7 @@ input{
             z-index:100;
             color: #999;
             display:none;
+            text-align: center;
         }
             #popup_layer .popup_list .list_select{
                 color: #999;
