@@ -6,7 +6,7 @@ $( document ).ready(function() {
         $('#popup_layer, #overlay_t').show(time);
         $('.triggerMenu').hide(time);        
         $('#popup_layer').css("top", Math.max(0, $(window).scrollTop() + 100) + "px");  
-        $('.triggerPop').show(2000);
+        $('.triggerPop').show(1500);
     });
 
     // 닫기 이벤트
