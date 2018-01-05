@@ -71,6 +71,15 @@ input{
             z-index: 99;
             display:none;
         }
+            .triggerPop {
+                float : right;
+                top: 0.5em;
+                right: 2.5em;
+            }
+                .triggerPop a:hover{
+                    color: #FFF;
+                    color: #FFF;
+                }
     
         #popup_layer {
             margin-bottom:20px;
