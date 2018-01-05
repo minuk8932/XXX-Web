@@ -1,23 +1,21 @@
 $( document ).ready(function() {
-    // 팝업 열기 트리거
+    var time = 1000;
 
-    $('.triggerMenu').click(function(){ 
-        $('#popup_layer, #overlay_t').show();
-        $('.triggerMenu').hide();
+    // 팝업 열기 트리거
+    $('.triggerMenu').click(function(){
+        $('#popup_layer, #overlay_t').show(time);
+        $('.triggerMenu').hide(time);        
         $('#popup_layer').css("top", Math.max(0, $(window).scrollTop() + 100) + "px");  
+        $('.triggerPop').show(2000);
     });
 
     // 닫기 이벤트
-    // $('#overlay_t, .close').click(function(e){ 
-    //     e.preventDefault(); 
-    //     $('#popup_layer, #overlay_t').hide();
-    // });
-
     $(document).ready(function() {
         $('.triggerPop').click(function() {
-            $('#overlay_t').hide();
-            $('#popup_layer').hide();
-            $('.triggerMenu').show();
+            $('#overlay_t').hide(time);
+            $('#popup_layer').hide(time);
+            $('.triggerMenu').show(time);
+            $('.triggerPop').hide(time);
         });
     });
     
