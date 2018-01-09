@@ -3,33 +3,39 @@
 <html>
     <head>
         <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         <title> XX_unXpected </title>
         <link rel="stylesheet" href="./page-assets/css/style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
         <link rel="SHORTCUT ICON" href="./images/main/XXX-logo.ico" />
 	    <link rel="icon" href="./images/main/XXX-logo.ico" type="image/ico" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <!-- body -->
     <body>
         <header id = "header">
             <!-- 홈 로고 설정 -->
-            <a href = "index.html" class = "home"><img src = "./images/main/XXX-logo.png"></a>
+            <a href = "index.html" class="home"><img src = "./images/main/XXX-logo.png" class="img-responsive"></a>
 
             <!-- 우측 상단 팝업 메뉴 -->
-            <a href = "#overlay_t" class = "triggerMenu"><img src = "./images/main/main-menu.png"></a>
-            <a href="#" class = "triggerPop"><img src = "./images/main/popup-menu.png"></a>
+            <a href = "#overlay_t" class = "triggerMenu"><img src = "./images/main/main-menu.png" class="img-responsive"></a>
+            <a href="#" class = "triggerPop"><img src = "./images/main/popup-menu.png" class="img-responsive"></a>
         </header>
 
         <div id ="main-page"> 
-            <div id = "XXX_image" class = "main style1 dark fullscreen">
-                <img src = "./images/main/main-img.jpeg" class = "imgResize" title = "XXX_Main">
+            <div class= "container">
+                <div id = "XXX_image" class = "main style1 dark fullscreen">
+                        <img src = "./images/main/main-img.jpeg" class="main-img img-responsive">
+                </div>
             </div>
 
             <div id="overlay_t">
             </div>
 
-            <div id="popup_layer">
+            <div id="popup_layer" class="container">
                 <ul class = "popup_list" type ="none">
                     <li><a class ="list_select">Login</a></li>
                     <li><a href = "./shop.html" class ="list_select">Shop</a></li>
@@ -49,23 +55,26 @@
             </div>
 
             <!-- footer -->
-            <footer id="footer">                
+            <footer id="footer" class="container-fluid">                
                 <nav class="copyright">
                     <ul>
                         <li>Copyright&copy; XXX All rights Reserved.</li>
                     </ul>
                 </nav>
             </footer>
-
         </div>
 
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    	<script src="./page-assets/js/jquery.poptrox.min.js"></script>
+        
+        <script src="./page-assets/js/jquery.poptrox.min.js"></script>
 	    <script src="./page-assets/js/jquery.scrolly.min.js"></script>
     	<script src="./page-assets/js/jquery.scrollex.min.js"></script>
     	<script src="./page-assets/js/skel.min.js"></script>
     	<script src="./page-assets/js/util.js"></script>
-    	<script src="./page-assets/js/main.js"></script>
+        <script src="./page-assets/js/main.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     </body>
 </html>
