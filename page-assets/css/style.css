@@ -284,9 +284,15 @@ input{
         color: #999;
     }
         .shop-items li .img-responsive{
-            width: 40vw;
-            height: 30vw;
+            width: 20vw;
+            height: 16vw;
         }
 
-
-
+        table td{
+            padding: 0 0 0 2vw;
+            font-size: 1.7vw;
+            vertical-align: -webkit-baseline-middle;
+        }
+            table td .goods-detail{
+                padding: 3vw 0 0 0;
+            }
