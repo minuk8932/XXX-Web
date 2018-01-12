@@ -314,6 +314,36 @@ input{
         cursor: pointer;
     }
 
+    /* img drop down */
+
+    .img-dropbtn {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .img-dropbtn-content {
+        display: none;
+        position: absolute;
+        top: -8vw;
+        right: 5vw;
+        background-color: #FFF;
+        z-index: 1;
+    }
+        .img-dropbtn-content .img-responsive{
+            min-width: 25vw;
+        }
+
+    .img-dropbtn:hover .img-dropbtn-content {
+        display: inline-block;
+    }
+
+    .desc {
+        padding: 1vw;
+        font-size: 0.7vw;
+        color: #000;
+        text-align: center;
+    }
+
     /* shop items view */
     .shop-items{
         position: relative;
