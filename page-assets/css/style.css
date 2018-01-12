@@ -266,7 +266,9 @@ input{
     .season{
         position: relative;
         display: inline-block;
-        left: 70vw;
+        float: right;
+        top: 3vw;
+        right: 2vw;
         word-spacing: 3vw;
         font-size: 1.2vw;
         color: #FFF;
@@ -275,6 +277,7 @@ input{
     .dropdown-season {
         display: none;
         position: absolute;
+        right: 0;
         background-color: #f9f9f9;
         min-width: 1.6vw;
         box-shadow: 0vw 3vw 6vw 0vw rgba(0,0,0,0.2);
