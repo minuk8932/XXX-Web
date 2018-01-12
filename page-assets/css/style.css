@@ -279,7 +279,7 @@ input{
     /* shop items view */
     .shop-items{
         position: relative;
-        padding: 3.5vw;
+        padding: 3.5vw 3.5vw 3.5vw 30vw;
         background-color: #000;
         color: #999;
     }
