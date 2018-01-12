@@ -60,7 +60,6 @@ input{
 .home {
     left: 2vw;
     width: 0.5vw;
-    height: 1vw;
 }
     .home .img-responsive{
         width: 10vw;
@@ -263,22 +262,59 @@ input{
 
 /* Shop Page */
 
-    .page-head{
+/* header drop-down*/
+    .season{
         position: relative;
-        margin: 0;
-        overflow: hidden;
+        display: inline-block;
+        left: 70vw;
+        word-spacing: 3vw;
+        font-size: 1.2vw;
+        color: #FFF;
     }
-        .season{
-            position: relative;
-            left: 3vw;
-            word-spacing: 3vw;
-            font-size: 1.2vw;
-            color: #FFF;
-        }
+
+    .dropdown-season {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 1.6vw;
+        box-shadow: 0vw 3vw 6vw 0vw rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-season a {
+        color: black;
+        padding: 1.2vw 1.6vw;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-season a:hover {
+        background-color: #7D7E7F;
+        color: #FFF;
+    }
+    
+    .season:hover .dropdown-season {
+        display: block;
+    }
+    
+    .season:hover .dropbtn {
+        background-color: #FFF;
+        color: #000
+    }
+
+    .dropbtn {
+        background-color: #2b2b2b;
+        color: #FFF;
+        padding: 1vw;
+        font-size: 1.2vw;
+        border: none;
+        cursor: pointer;
+    }
 
     /* shop items view */
     .shop-items{
         position: relative;
+        padding: 3.5vw;
         padding: 3.5vw 3.5vw 3.5vw 30vw;
         background-color: #000;
         color: #999;
