@@ -165,15 +165,21 @@ input{
     }
         .XXX-info .about{
             bottom: 1.2em;
-            font-size: 1.2em;
+            font-size: 1.2vw;
             font-style: italic;
             opacity: 0.6;
         }
 
         .XXX-info .about-content{
-            font-size: 0.8em;
+            font-size: 0.8vw;
         }
 
+        #license{
+            opacity: 0.6;
+            font-size: 1vw;
+            font-style: italic;
+            line-height: 2em;
+        }
 
 /* Contact */
     #contact-icons{
