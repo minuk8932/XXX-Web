@@ -23,9 +23,8 @@ $( document ).ready(function() {
 $(document).ready(function(){
     $(window).scroll(function(){
         var scrollT = $(this).scrollTop();  // 스크롤 바 상단 위치 값
-        var menuH = $('#shop-items').offset(); // 스크롤 바가 존재하는 div의 높이 값
         
-        if(scrollT > menuH.top){                     // 스크롤 한 경우
+        if(scrollT > 0){                     // 스크롤 한 경우
             $('.first-dropbtn').css('z-index', 1);   // 이미지를 다른 dropbtn과 같은 설정
         }
         else{                                        // 스크롤 안 한 경우
