@@ -329,6 +329,10 @@ input{
         background-color: #FFF;
         z-index: 1;
     }
+        .first-dropbtn{
+            z-index: 102;
+        }
+
         .img-dropbtn-content .img-responsive{
             min-width: 25vw;
         }
