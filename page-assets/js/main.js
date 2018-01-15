@@ -1,3 +1,4 @@
+// 햄버거 메뉴 이벤트
 $( document ).ready(function() {
     var time = 1000;
 
@@ -20,6 +21,7 @@ $( document ).ready(function() {
     });
 });
 
+// shop 탭 최상단 상품 이미지 드롭버튼 이벤트
 $(document).ready(function(){
     $(window).scroll(function(){
         var scrollT = $(this).scrollTop();  // 스크롤 바 상단 위치 값
