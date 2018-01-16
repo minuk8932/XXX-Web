@@ -391,9 +391,11 @@ input{
     }
 
     .login-text{
-        background-color: #7D7E7F;
+        background-color: #000;
         color: #FFF;
-        border: #000;
+        border-left: #FFF;
+        border-right: #FFF;
+        border-top: #FFF;
         vertical-align: -webkit-baseline-middle;
         font-size: 1.4vw;
     }
