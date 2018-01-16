@@ -382,7 +382,7 @@ input{
 /* login */
 
 #login-form{
-    margin: 15vw 40vw 0 40vw;
+    margin: 13vw 40vw 0 40vw;
 }
 
     .login{
@@ -399,5 +399,19 @@ input{
     }
 
     .login-title{
-        font-size: 1.2vw
+        font-size: 1.2vw;
     }
+        .login-submit{
+            padding: 6vw 0 0 3vw;
+            font-size: 1.2vw;
+            z-index: 1;
+        }
+
+        .submitbtn{
+            width: 10vw;
+            height: 5vw;
+            opacity: 0.7;
+        }
+            .login-submit a :hover{
+                opacity: 1;
+            }
