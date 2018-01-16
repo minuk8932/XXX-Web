@@ -20,6 +20,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
     position: relative;
+    background-color: #000;
 }
 
 
@@ -84,7 +85,7 @@ input{
             top: 0.5vw;
             right: 2.5vw;
             z-index: 100;
-            size: 10vw;
+            size: 8vw;
             display: none;
         }
             .triggerPop .img-responsive{
@@ -116,7 +117,7 @@ input{
             text-align: center;
         }
             #popup_layer .popup_list{
-               left: 50vw;
+               left: 46vw;
                bottom: 0vw;
             }
 
@@ -292,6 +293,7 @@ input{
     
     .dropdown-season a {
         color: black;
+        background-color: #fff;
         padding: 1.2vw 1.6vw;
         text-decoration: none;
         display: block;
@@ -350,11 +352,12 @@ input{
     .desc {
         padding: 1vw;
         font-size: 0.7vw;
+        background-color: #FFF;
         color: #000;
         text-align: center;
     }
 
-    /* shop items view */
+/* shop items view */
     #shop-items{
         position: relative;
         padding: 3.5vw;
@@ -375,3 +378,26 @@ input{
             table td .goods-detail{
                 padding: 3vw 0 0 0;
             }
+
+/* login */
+
+#login-form{
+    margin: 15vw 40vw 0 40vw;
+}
+
+    .login{
+        color: #fff;
+        vertical-align: -webkit-baseline-middle;
+    }
+
+    .login-text{
+        background-color: #7D7E7F;
+        color: #FFF;
+        border: #000;
+        vertical-align: -webkit-baseline-middle;
+        font-size: 1.4vw;
+    }
+
+    .login-title{
+        font-size: 1.2vw
+    }
