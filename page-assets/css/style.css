@@ -415,3 +415,16 @@ input{
             .login-submit a :hover{
                 opacity: 1;
             }
+        
+    
+    #set-id{
+        position: relative;
+        margin: 1vw 0 0 42vw;
+        font-size: 1vw;
+    }
+    #set-id li a{
+        color: #7D7E7F;
+    }
+        #set-id .find-create :hover{
+            color: #FFF;
+        }
