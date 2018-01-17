@@ -38,8 +38,7 @@ $(document).ready(function(){
 // shop의 season 탭 날짜 형식 정의
 $(document).ready(function(){
     var year = new Date();
-    var last = "Last";
-    document.getElementById("last-seasons").innerHTML = last + " season";
+    document.getElementById("last-seasons").innerHTML = "Last" + " prod.";
     document.getElementById("now-season1").innerHTML = year.getFullYear() + " S/S";
     document.getElementById("now-season2").innerHTML = year.getFullYear() + " F/W";
 });
