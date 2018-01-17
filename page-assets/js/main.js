@@ -38,6 +38,27 @@ $(document).ready(function(){
 // shop의 season 탭 날짜 형식 정의
 $(document).ready(function(){
     var year = new Date();
+    var last = "Last";
+    document.getElementById("last-seasons").innerHTML = last + " season";
     document.getElementById("now-season1").innerHTML = year.getFullYear() + " S/S";
     document.getElementById("now-season2").innerHTML = year.getFullYear() + " F/W";
+});
+
+// floating banner
+var quick_menu = $('.season');
+var quick_top = 50;
+
+quick_menu.css('top', $(window).height());
+
+$(document).ready(function(){
+    quick_menu.animate( { 
+        "top": $(document).scrollTop() + quick_top +"px" 
+    }, 200 );
+
+    $(window).scroll(function(){
+        quick_menu.stop();
+        quick_menu.animate( { 
+            "top": $(document).scrollTop() + quick_top + "px" 
+        }, 500 );
+    });
 });
