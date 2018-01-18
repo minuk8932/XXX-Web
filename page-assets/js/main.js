@@ -1,23 +1,25 @@
 // 햄버거 메뉴 이벤트
-$( document ).ready(function() {
-    var time = 1000;
+$(document).ready(function(){
+    var time = 500;
 
-    // 팝업 열기 트리거
-    $('.triggerMenu').click(function(){
-        $('#popup_layer, #overlay_t').show(time);
-        $('.triggerMenu').hide(time);        
-        $('#popup_layer').css("top", Math.max(0, $(window).scrollTop() + 100) + "px");  
-        $('.triggerPop').show(time);
+    // 메뉴 열기
+    $("#burger-container").on('click', function(){
+        $(this).toggleClass("open");
+        var openVar = document.querySelector('#burger-container').className;
+        
+        if(openVar == "close open"){
+            $('#popup_layer, #overlay_t').show(time);
+        }
     });
 
-    // 닫기 이벤트
-    $(document).ready(function() {
-        $('.triggerPop').click(function() {
-            $('#overlay_t').hide(time);
-            $('#popup_layer').hide(time);
-            $('.triggerMenu').show(time);
-            $('.triggerPop').hide(time);
-        });
+    // 메뉴 닫기
+    $("#burger-container").on('click', function(){
+        $(this).toggleClass("close");
+        var closeVar = document.querySelector('#burger-container').className;
+
+        if(closeVar == "close"){
+            $('#popup_layer, #overlay_t').hide(time);
+        }
     });
 });
 
@@ -38,7 +40,6 @@ $(document).ready(function(){
 // shop의 season 탭 날짜 형식 정의
 $(document).ready(function(){
     var year = new Date();
-    document.getElementById("last-seasons").innerHTML = "Last" + " prod.";
     document.getElementById("now-season1").innerHTML = year.getFullYear() + " S/S";
     document.getElementById("now-season2").innerHTML = year.getFullYear() + " F/W";
 });

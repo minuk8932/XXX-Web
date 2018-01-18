@@ -23,7 +23,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background-color: #000;
 }
 
-
 /* 레이아웃 기본 값 */
 
 a, a:link, a:visited{ 
@@ -68,29 +67,44 @@ input{
     }
 
 /* Top Menu */
-        #XXXheader .triggerMenu {
-            float : right;
-            top: 1vw;
-            right: 3vw;
-            z-index: 100;
-            size: 10vw;
-        }
-            .triggerMenu .img-responsive{
-                width: 4.8vw;
-                height: 4.8vw;
+            #burger-container{
+                float: right;
+                margin: 2vw 6vw 0 0;
+                /* width: 20px; */
             }
-
-        #XXXheader .triggerPop {
-            float : right;
-            top: 0.5vw;
-            right: 2.5vw;
-            z-index: 100;
-            size: 8vw;
-            display: none;
-        }
-            .triggerPop .img-responsive{
-                width: 5vw;
-                height: 5vw;
+            
+            
+            #burger{
+                cursor:pointer;
+                display:block;
+            }
+            
+            
+            #burger span{
+                background: #FFF;
+                display:block;
+                width:30px;
+                height:4px;
+                margin-bottom: 5px;
+                position: relative;
+                top:0;
+                transition: all ease-in-out 0.4s;  
+            }
+            
+            #burger-container.open span:nth-child(2){
+                width: 0;
+                opacity:0;
+                
+            }
+            
+            #burger-container.open span:nth-child(1){
+                transform: rotate(-45deg);
+                top:9px;
+            }
+            
+            #burger-container.open span:nth-child(3){
+                transform: rotate(45deg);
+                top:-9px;
             }
 
         #overlay_t {
@@ -104,6 +118,7 @@ input{
             top: 0;
             z-index: 99;
             display:none;
+            padding : 20vw 0 0 0;
         }   
     
         #popup_layer {
@@ -118,7 +133,8 @@ input{
         }
             #popup_layer .popup_list{
                left: 46vw;
-               bottom: 0vw;
+               bottom: 0;
+               top: 0;
             }
 
             #popup_layer li a{

@@ -21,8 +21,15 @@
             <a href = "index.html" class="home"><img src = "./images/main/XXX-logo.png" class="img-responsive"></a>
 
             <!-- 우측 상단 팝업 메뉴 -->
-            <a href = "#overlay_t" class = "triggerMenu"><img src = "./images/main/main-menu.png" class="img-responsive"></a>
-            <a href="#" class = "triggerPop"><img src = "./images/main/popup-menu.png" class="img-responsive"></a>
+            <div id="burger-container" class="close">
+                <a href = "#overlay_t">
+                    <div id="burger">
+                        <span> &nbsp;</span>
+                        <span> &nbsp;</span>
+                        <span> &nbsp;</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <div class ="page">
@@ -33,20 +40,17 @@
                 </div>
             </div>
 
-            
-
-            <div id="popup_layer">
-                <ul class = "popup_list" type ="none">
-                    <li><a href="./login.html">Login</a></li>
-                    <!-- AJAX 처리 필요 -->
-                    <li><a href = "./shop.html">Shop</a></li>
-                    <li><a>Order</a></li>
-                    <li><a>Cart</a></li>
-                    <li><a>Lookbook</a></li>
-                </ul>
-            </div>
-
             <div id="overlay_t">
+                <div id="popup_layer">
+                    <ul class = "popup_list" type ="none">
+                        <li><a href="./login.html">Login</a></li>
+                        <!-- AJAX 처리 필요 -->
+                        <li><a href = "./shop.html">Shop</a></li>
+                        <li><a>Order</a></li>
+                        <li><a>Cart</a></li>
+                        <li><a>Lookbook</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class ="XXX-info">
@@ -84,12 +88,13 @@
 
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
         
         <script src="./page-assets/js/jquery.poptrox.min.js"></script>
 	    <script src="./page-assets/js/jquery.scrolly.min.js"></script>
     	<script src="./page-assets/js/jquery.scrollex.min.js"></script>
     	<script src="./page-assets/js/skel.min.js"></script>
-    	<script src="./page-assets/js/util.js"></script>
+        <script src="./page-assets/js/util.js"></script>
         <script src="./page-assets/js/main.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
