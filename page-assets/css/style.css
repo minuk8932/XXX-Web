@@ -450,85 +450,29 @@ input{
             color: #FFF;
         }
 
-
-*{
-    margin:0;
-    padding:0;
+/* slide */
+.bx-wrapper{
+    padding: 1vw 0 1vw 4vw;
     border: 0;
+    background-color: #000;
 }
-        
-    /* slide */
-    
-    .slide{
-        background : #000;
-        text-align:center;
-        position:relative;
-        width:80vw;
-        height: 40vw;
-        left: 10vw;
-        margin: 0;
-        display: block;
-    }
-    
-    .slide_ul{
-        display: block;
-    }
-    .slide_ul > li{
-        position:absolute; 
-        top:0; 
-        left:0; 
-        list-style:none;
-        z-index:10; 
-        display: block;
-    }
-    .slide_ul > li img{
-        height: 40vw;
-        width: 80vw;
-    }
-    li{
-        list-style: none;
-    }
-    
-    .show{
-        display:block;
-    }
-    
-    
-    /* slide dot btn */
-    .slide_btn{
-        z-index:100;
-        position:absolute;
-        right: 0;
-        bottom:0;
-    }
-        .slide_btn>li{
-            float: left;
-            margin:0 5px 5px 0;
-        }
-            .slide_btn>li>a{
-                display:block;
-                width: 14px;
-                height:14px;
-                background: url('../../images/Lookbook/dot.png') -24px -125px;
-                text-indent: -999em;
-            }
-            .slide_btn>li>a.active{
-                background-position: 0 -126px;
-            }
-    
-    .slide_btn{
-        *zoom: 1;
-    }
-        .slide_btn:after{
-            content:'';
-            display:block;
-            clear:both;
-        }
 
-    /* slide window settings */
-    .bx-wrapper{
-        border: 0;
+.bx-viewport{
+    position: absolute;
+    background-color: #000;
+}
+    .slide-ul{
+        padding: 2vw 0 4vw 2vw;
+        left: 3vw;
         margin: 0;
         padding: 0;
-        background-color: #000;
     }
+        .slide-ul li{
+            font-size: 0.8vw;
+        }
+        .slide-ul li img{
+            width: 15vw;
+            height: 35vw;
+        }
+
+    
