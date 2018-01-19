@@ -81,34 +81,39 @@ $(document).ready(function() {
 	
 	$('.slide_btn > li > a').first().addClass('active');	
 	$('.slide_btn > li > a').on('click' , slide_stop);
-	
-//자동 슬라이드
-function autoplay(){
-	if(current == slide_length-1){
-	    current = 0;
+    
+    $('.slide_ul').bxSlider({
+        captions: true  // 설명글 추가
+        ,controls: false // 화살표 버튼 제거
+    });
+
+    //자동 슬라이드
+    function autoplay(){
+	    if(current == slide_length-1){
+	        current = 0;
+        }
+        else{
+	        current++;
+        }
+
+        $('.slide_ul>li').stop().fadeOut(1000);
+        $('.slide_ul>li').eq(current).stop().fadeIn(1000);
+        $('.slide_btn > li > a').removeClass('active');	
+        $('.slide_btn > li > a').eq(current).addClass('active');	
     }
-    else{
-	    current++;
-    }
+    setInterval(autoplay,3000);
 
-	$('.slide_ul>li').stop().fadeOut(1000);
-	$('.slide_ul>li').eq(current).stop().fadeIn(1000);
-	$('.slide_btn > li > a').removeClass('active');	
-	$('.slide_btn > li > a').eq(current).addClass('active');	
-}
-setInterval(autoplay,3000);
+    //버튼 클릭시 슬라이드
+    function slide_stop(){
+            var fade_idx = $(this).parent().index(); 
+            current = $(this).parent().index(); //클릭한 버튼의 Index 를 받아서 그 다음 이미지부터 슬라이드 재생.
+            
+            if($('.slide_ul > li:animated').length >= 1)
+                return false;   //버튼 반복 클릭시 딜레이 방지
 
-//버튼 클릭시 슬라이드
-function slide_stop(){
-		var fade_idx = $(this).parent().index(); 
-        current = $(this).parent().index(); //클릭한 버튼의 Index 를 받아서 그 다음 이미지부터 슬라이드 재생.
-        
-        if($('.slide_ul > li:animated').length >= 1)
-            return false;   //버튼 반복 클릭시 딜레이 방지
-
-		$('.slide_ul > li').fadeOut(400);
-		$('.slide_ul > li').eq(fade_idx).fadeIn(400);
-		$('.slide_btn > li > a').removeClass('active');	
-		$(this).addClass('active');
+            $('.slide_ul > li').fadeOut(400);
+            $('.slide_ul > li').eq(fade_idx).fadeIn(400);
+            $('.slide_btn > li > a').removeClass('active');	
+            $(this).addClass('active');
 	}	
 });

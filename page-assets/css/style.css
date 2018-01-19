@@ -454,6 +454,7 @@ input{
 *{
     margin:0;
     padding:0;
+    border: 0;
 }
         
     /* slide */
@@ -508,7 +509,7 @@ input{
                 display:block;
                 width: 14px;
                 height:14px;
-                background: url("../images/Lookbook/dot.png") -24px -125px;
+                background: url('../../images/Lookbook/dot.png') -24px -125px;
                 text-indent: -999em;
             }
             .slide_btn>li>a.active{
@@ -523,4 +524,11 @@ input{
             display:block;
             clear:both;
         }
-    
+
+    /* slide window settings */
+    .bx-wrapper{
+        border: 0;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+    }
