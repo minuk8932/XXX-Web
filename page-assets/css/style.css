@@ -146,6 +146,7 @@ input{
             #popup_layer .popup_list a:hover{
                 color: #FFF;
                 color: #FFF;
+                opacity: 1;
             }
 
 /* Main Image */
