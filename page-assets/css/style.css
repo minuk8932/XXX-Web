@@ -449,3 +449,78 @@ input{
         #set-id .find-create :hover{
             color: #FFF;
         }
+
+
+*{
+    margin:0;
+    padding:0;
+}
+        
+    /* slide */
+    
+    .slide{
+        background : #000;
+        text-align:center;
+        position:relative;
+        width:80vw;
+        height: 40vw;
+        left: 10vw;
+        margin: 0;
+        display: block;
+    }
+    
+    .slide_ul{
+        display: block;
+    }
+    .slide_ul > li{
+        position:absolute; 
+        top:0; 
+        left:0; 
+        list-style:none;
+        z-index:10; 
+        display: block;
+    }
+    .slide_ul > li img{
+        height: 40vw;
+        width: 80vw;
+    }
+    li{
+        list-style: none;
+    }
+    
+    .show{
+        display:block;
+    }
+    
+    
+    /* slide dot btn */
+    .slide_btn{
+        z-index:100;
+        position:absolute;
+        right: 0;
+        bottom:0;
+    }
+        .slide_btn>li{
+            float: left;
+            margin:0 5px 5px 0;
+        }
+            .slide_btn>li>a{
+                display:block;
+                width: 14px;
+                height:14px;
+                background: url("../images/Lookbook/dot.png") -24px -125px;
+                text-indent: -999em;
+            }
+            .slide_btn>li>a.active{
+                background-position: 0 -126px;
+            }
+    
+    .slide_btn{
+        *zoom: 1;
+    }
+        .slide_btn:after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+    
