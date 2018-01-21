@@ -62,21 +62,3 @@ $(document).ready(function(){
         }, 500 );
     });
 });
-
-// Lookbook 슬라이드 이벤트
-$(document).ready(function(){
-    $('.slide-ul').bxSlider({
-        captions: true  // 설명글 추가
-        ,auto: true
-        ,autoHover: true
-        ,pager: true
-        ,controls: false // 화살표 버튼 제거
-        ,minSlides:4
-        ,maxSlides:4
-        ,slideWidth: 300
-        ,speed: 500
-        ,pause: 2000
-        ,infiniteLoop: true
-        ,mode: 'horizontal'
-    });
-});

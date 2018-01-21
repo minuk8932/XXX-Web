@@ -12,7 +12,10 @@
 }
 
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    background-color: #000;
+}
+html, body, div, span, applet, object, iframe, ul, li, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -20,7 +23,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
     position: relative;
-    background-color: #000;
 }
 
 /* 레이아웃 기본 값 */
@@ -450,29 +452,11 @@ input{
             color: #FFF;
         }
 
-/* slide */
-.bx-wrapper{
-    padding: 1vw 0 1vw 4vw;
-    border: 0;
-    background-color: #000;
+/* carousel slide */
+.carousel-inner img {
+    width: 80vw;
+    height: 40vw;
+    padding: 0 0 0 20vw;
 }
-
-.bx-viewport{
-    position: absolute;
-    background-color: #000;
-}
-    .slide-ul{
-        padding: 2vw 0 4vw 2vw;
-        left: 3vw;
-        margin: 0;
-        padding: 0;
-    }
-        .slide-ul li{
-            font-size: 0.8vw;
-        }
-        .slide-ul li img{
-            width: 15vw;
-            height: 35vw;
-        }
 
     
