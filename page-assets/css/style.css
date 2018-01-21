@@ -288,7 +288,7 @@ input{
 
 /* Shop Page */
 
-/* header drop-down*/
+    /* header drop-down*/
     .season{
         position:relative;
         z-index: 2;
@@ -304,7 +304,6 @@ input{
         position: absolute;
         padding: 0 0 0 0;
         background-color: #f9f9f9;
-        /* min-width: 1.5vw; */
         width: 11vw;
         font-size: 1.1vw;
         box-shadow: 0vw 3vw 6vw 0vw rgba(0,0,0,0.2);
@@ -378,7 +377,7 @@ input{
         text-align: center;
     }
 
-/* shop items view */
+    /* shop items view */
     #shop-items{
         position: relative;
         padding: 3.5vw;
@@ -399,6 +398,14 @@ input{
             table td .goods-detail{
                 padding: 3vw 0 0 0;
             }
+
+    /* shop page list */
+    .pagination{
+        text-align: center;
+    }
+    .pagination > li > a {
+        background-color: #000;
+    }
 
 /* login */
 
