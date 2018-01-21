@@ -75,7 +75,7 @@ $(document).ready(function(){
         ,maxSlides:4
         ,slideWidth: 300
         ,speed: 500
-        ,pause: 1000
+        ,pause: 2000
         ,infiniteLoop: true
         ,mode: 'horizontal'
     });
