@@ -459,6 +459,12 @@ input{
             .login-submit a :hover{
                 opacity: 1;
             }
+
+    
+    /* Sign-up */
+    .form-group > label{
+        color: #FFF;
+    }
         
     
     #set-id{
