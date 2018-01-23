@@ -400,12 +400,26 @@ input{
             }
 
     /* shop page list */
-    .pagination{
-        text-align: center;
+    .navigation{
+        float: right;
+        padding: 0 10vw 3vw 0;
     }
-    .pagination > li > a {
-        background-color: #000;
+
+    .pagination {
+        clear:both;
+        position:relative;
+        font-size:11px;
+        text-align:center;
     }
+        .pagination span, .pagination a {
+            display:inline-block;
+            margin: 2px 2px 2px 0;
+            padding:6px 9px 5px 9px;
+            text-decoration:none;
+            color: #ddd;
+            background: #222;
+        }
+    
 
 /* login */
 
