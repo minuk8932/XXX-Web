@@ -7,7 +7,7 @@
 /* 선택시 */
 ::selection { 
     background: #999;
-    color: #999;
+    color: #000;
     text-shadow: none;
 }
 
@@ -487,8 +487,15 @@ input{
     #result-btn{
         margin: 3vw 2vw 0 0;
     }
-    
 
+    #terms-of-service{
+        text-align: justify;
+        height: 14vw;
+    }
+    
+    .radio-agree{
+        color: #FFF;
+    }
 
 /* Lookbook (carousel slide) */
 .carousel-inner img {
